@@ -26,7 +26,7 @@ center "*** Dependencies installation..."
 rm $PREFIX/etc/apt/sources.list.d/*
 
 # Add gushmazuko repository to install ruby 2.7.2 version
-echo 'deb https://github.com/mrx2709/ericotermux/raw/master gushmazuko main'  | tee $PREFIX/etc/apt/sources.list.d/gushmazuko.list
+echo 'deb https://github.com/mrx2709/ericotermux/raw/master ericotermux main'  | tee $PREFIX/etc/apt/sources.list.d/gushmazuko.list
 
 pkg install -y gnupg
 curl -fsSL https://raw.githubusercontent.com/mrx2709/ericotermux/master/gushmazuko-gpg.pubkey | gpg --dearmor | tee $PREFIX/etc/apt/trusted.gpg.d/gushmazuko-repo.gpg
